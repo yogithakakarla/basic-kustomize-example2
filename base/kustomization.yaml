@@ -1,0 +1,24 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+metadata:
+  name: Kustomize-app
+
+commonLabels:
+  app: kustomize-app
+  owner: Yogitha
+
+namePrefix: kodeKloud
+
+resources:
+- adservice.yaml
+- cartservice.yaml
+- currencyservice.yaml
+- checkoutservice.yaml
+- frontend.yaml
+- frontend-external.yaml
+- paymentservice.yaml
+- emailservice.yaml
+- redis-cart.yaml
+- recommendationservice.yaml
+- productcatalogservice.yaml
+- shippingservice.yaml
