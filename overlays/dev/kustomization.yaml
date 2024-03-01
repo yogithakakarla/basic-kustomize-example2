@@ -6,10 +6,10 @@ nameSuffix: -dev
 namespace: dev
 
 helmCharts:
-- name: sockshop
-  repo: https://github.com/microservices-demo/microservices-demo/tree/master/deploy/kubernetes/helm-chart
-  releaseName: sockshop
-  namespace: dev
+- name: nginx-controller
+  repo: https://kubernetes.github.io/ingress-nginx
+  releaseName: nginx-controller
+ 
   version: 0.1.0
   valuesFile: values.yaml
 
