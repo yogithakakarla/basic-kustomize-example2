@@ -14,6 +14,6 @@ helmCharts:
   valuesFile: values.yaml
 
 patches:
-- path: patches/node_affinity_deployment.yaml
+- path: node_affinity_deployment.yaml
   target:
     kind: Deployment
