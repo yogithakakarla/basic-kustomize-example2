@@ -4,3 +4,16 @@ resources:
 
 nameSuffix: -dev
 namespace: dev
+
+helmCharts:
+- name: sockshop
+  repo: https://github.com/microservices-demo/microservices-demo/tree/master/deploy/kubernetes/helm-chart
+  releaseName: sockshop
+  namespace: dev
+  version: 0.1.0
+  valuesFile: values.yaml
+
+patches:
+- path: patches/node_affinity_deployment.yaml
+  target:
+    kind: Deployment
